@@ -1,0 +1,41 @@
+﻿@model IEnumerable<W24_TP2_Maxime_Caron.ViewModels.HomeCat>
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+@if (User.IsInRole("Admin")){
+    <p>
+        <a asp-controller="Categories" asp-action="Create" class="btn btn-primary mt">Creer une nouvelle categorie</a>
+    </p>
+}
+
+<div class="centrer">
+    @foreach(var item in Model)
+    {           
+        <div class="card espace-Vertical" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">@item.CatId : @item.CatNom</h5>
+                <p> Actif: @Html.DisplayFor(modelItem => item.CatActif)</p>
+
+                <p class="card-text">@item.CatDescription</p>
+                @foreach (var sujet in item.TopSujet)
+                {
+                    <div>- @sujet.SujetTitre</div>
+                }
+
+                <a class="btn btn-default color-DarkGray" asp-controller="Categories" asp-action="Details" asp-route-id="@item.CatId">Details</a>
+
+                @if (User.IsInRole("Admin"))
+                {
+                    <a class="btn btn-default color-DarkGray" asp-controller="Categories" asp-action="Edit" asp-route-id="@item.CatId">Edit</a>
+                    <a class="btn btn-default color-DarkGray" asp-controller="Categories" asp-action="Delete" asp-route-id="@item.CatId">Delete</a>
+                    <a asp-controller="Sujets" asp-action="Index" asp-route-id="@item.CatId" class="btn btn-primary mt">Sujets</a>
+                }else{
+                    <a asp-controller="Sujets" asp-action="Index" asp-route-id="@item.CatId" class="btn btn-primary">Sujets</a>
+                }
+            </div>
+        </div>
+    }
+</div>
+

@@ -1,0 +1,88 @@
+﻿@using System.Security.Claims
+@model IEnumerable<W24_TP2_Maxime_Caron.ViewModels.viewSujet>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Sujets</h1>
+
+@if (User.Identity.IsAuthenticated){
+    <p>
+        <a asp-action="Create" class="btn btn-primary mt">Creer un nouveau sujet</a>
+    </p>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Utilisateur
+            </th>
+            <th>
+                Titre
+            </th>
+            <th>
+                Texte
+            </th>
+            <th>
+                Vues
+            </th>
+            <th>
+                Date Creation
+            </th>           
+            <th>
+                Date Recente
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Utilisateur)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SujetTitre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SujetTexte)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SujetVues)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SujetDate)
+                </td>                
+                <td>
+                    @Html.DisplayFor(modelItem => item.dateRecente)
+                </td>
+
+                <td>
+                    @if (User.Identity.IsAuthenticated){
+                        @if (item.User == User.FindFirstValue(ClaimTypes.NameIdentifier))
+                    {
+                            <a class="btn btn-default color-DarkGray" asp-action="Edit" asp-route-id="@item.SujetId">Edit</a>
+                        }
+                        else if (item.User != User.FindFirstValue(ClaimTypes.NameIdentifier))
+                        {
+                            <a class="btn btn-default disabled color-DarkGray" asp-action="Edit" asp-route-id="@item.SujetId">Edit</a>
+                    }
+                    }
+           
+                    @if (User.IsInRole("Admin")){
+                        <a class="btn btn-default color-DarkGray" asp-action="Delete" asp-route-id="@item.SujetId">Delete</a>
+                    }
+                    <a class="btn btn-default color-DarkGray" asp-action="Details" asp-route-id="@item.SujetId">Details</a>
+
+                    @if (User.Identity.IsAuthenticated) {
+                        <a asp-controller="Messages" asp-action="Index" asp-route-id="@item.SujetId" class="btn btn-primary mt">Messages</a>
+                    }else{
+                        <a asp-controller="Messages" asp-action="Index" asp-route-id="@item.SujetId" class="btn btn-primary">Messages</a>
+                    }                
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

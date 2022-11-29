@@ -1,0 +1,23 @@
+/*Style Perso*/
+
+.centrer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.espace-Vertical {
+    margin-top: 2rem;
+}
+
+.droite {
+    float: right;
+}
+
+.mt {
+    margin-top: 20px;
+}
+
+.color-DarkGray {
+    background-color: DarkGray;
+}

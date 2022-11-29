@@ -1,0 +1,61 @@
+﻿@model W24_TP2_Maxime_Caron.Models.Sujet
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Sujet</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="SujetId" />
+            <div class="form-group">
+                <label asp-for="CatId" class="control-label">Categorie</label>
+                <select asp-for="CatId" class="form-control" asp-items="ViewBag.CatId"></select>
+                <span asp-validation-for="CatId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Utilisateur" class="control-label">Utilisateur</label>
+                <input asp-for="Utilisateur" class="form-control" />
+                <span asp-validation-for="Utilisateur" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SujetTitre" class="control-label">Titre</label>
+                <input asp-for="SujetTitre" class="form-control" />
+                <span asp-validation-for="SujetTitre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SujetTexte" class="control-label">Texte</label>
+                <input asp-for="SujetTexte" class="form-control" />
+                <span asp-validation-for="SujetTexte" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SujetDate" class="control-label">Date</label>
+                <input asp-for="SujetDate" class="form-control" />
+                <span asp-validation-for="SujetDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SujetVues" class="control-label">Vues</label>
+                <input asp-for="SujetVues" class="form-control" />
+                <span asp-validation-for="SujetVues" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="SujetActif" /> Actif
+                </label>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-controller="Sujets" asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

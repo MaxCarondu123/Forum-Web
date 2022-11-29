@@ -1,0 +1,63 @@
+﻿@model W24_TP2_Maxime_Caron.Models.Sujet
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Sujet</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Utilisateur
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Utilisateur)
+        </dd>
+        <dt class = "col-sm-2">
+            Titre
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SujetTitre)
+        </dd>
+        <dt class = "col-sm-2">
+            Texte
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SujetTexte)
+        </dd>
+        <dt class = "col-sm-2">
+            Date
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SujetDate)
+        </dd>
+        <dt class = "col-sm-2">
+            Vues
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SujetVues)
+        </dd>
+        <dt class = "col-sm-2">
+            Actif
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SujetActif)
+        </dd>
+        <dt class = "col-sm-2">
+            Categorie
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Cat.CatNom)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="SujetId" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-controller="Sujets" asp-action="Index">Back to List</a>
+    </form>
+</div>

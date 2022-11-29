@@ -1,0 +1,76 @@
+﻿@using System.Security.Claims
+@using W24_TP2_Maxime_Caron.Tools;
+@model PaginatedList<W24_TP2_Maxime_Caron.Models.Message>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Messages</h1>
+
+@if (User.Identity.IsAuthenticated)
+{
+    <p>
+        <a asp-action="Create" class="btn btn-primary mt">Creer un nouveau message</a>
+    </p>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Utilisateur
+            </th>
+            <th>
+                Text
+            </th>
+            <th>
+                Date
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Utilisateur)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MsgText)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MsgDate)
+            </td>
+            <td>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    @if (item.User == User.FindFirstValue(ClaimTypes.NameIdentifier)){
+                            <a class ="btn btn-default color-DarkGray" asp-action="Edit" asp-route-id="@item.MsgId">Edit</a>
+                            <a class="btn btn-default color-DarkGray" asp-action="Delete" asp-route-id="@item.MsgId">Delete</a>
+                        }
+                        else if (item.User != User.FindFirstValue(ClaimTypes.NameIdentifier)){
+                            <a class="btn btn-default disabled color-DarkGray" asp-action="Edit" asp-route-id="@item.MsgId">Edit</a>
+                            <a class="btn btn-default disabled color-DarkGray" asp-action="Delete" asp-route-id="@item.MsgId">Delete</a>
+                        }
+                }
+                <a class="btn btn-default color-DarkGray" asp-action="Details" asp-route-id="@item.MsgId">Details</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+@*Navigation*@
+@{
+    var prevDisable = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisable = !Model.HasNextPage ? "disabled" : "";
+}
+
+<a class="btn btn-primary @prevDisable" asp-controller="Messages" asp-action="Index" asp-route-pageNumber="1">First</a>
+<a class="btn btn-primary @prevDisable" asp-controller="Messages" asp-action="Index" asp-route-pageNumber="@(Model.PageIndex-1)">Prev</a>
+<a class="btn btn-default disabled">@Model.PageIndex/@Model.TotalPages</a>
+<a class="btn btn-primary @nextDisable" asp-controller="Messages" asp-action="Index" asp-route-pageNumber="@(Model.PageIndex+1)">Next</a>
+<a class="btn btn-primary @nextDisable" asp-controller="Messages" asp-action="Index" asp-route-pageNumber="@Model.TotalPages">Last</a> |
+
+<input type="number" id="nbr" min="1" max="100"/>
+<a class="btn btn-primary @nextDisable" asp-controller="Messages" asp-action="Index" asp-route-nbrMessage="">Nombre message</a>

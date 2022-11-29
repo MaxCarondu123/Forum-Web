@@ -1,0 +1,49 @@
+﻿@model W24_TP2_Maxime_Caron.Models.Category
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Category</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="CatId" />
+            <div class="form-group">
+                <label asp-for="CatNom" class="control-label">Nom</label>
+                <input asp-for="CatNom" class="form-control" />
+                <span asp-validation-for="CatNom" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CatDescription" class="control-label">Description</label>
+                <input asp-for="CatDescription" class="form-control" />
+                <span asp-validation-for="CatDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CatImg" class="control-label">Image</label>
+                <input asp-for="CatImg" class="form-control" />
+                <span asp-validation-for="CatImg" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="CatActif" /> @Html.DisplayNameFor(model => model.CatActif)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-controller="Home"  asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

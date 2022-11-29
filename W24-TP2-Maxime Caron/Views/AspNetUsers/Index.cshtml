@@ -1,0 +1,44 @@
+﻿@model IEnumerable<W24_TP2_Maxime_Caron.Models.AspNetUser>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Utilisateurs</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>
+                Username
+            </td>
+            <td>
+                Nombre de Sujets
+            </td>
+            <td>
+                Nombre de Messages
+            </td>
+            <td>
+                Date activite
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NormalizedUserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NormalizedEmail)
+            </td>         
+        </tr>
+}
+    </tbody>
+</table>

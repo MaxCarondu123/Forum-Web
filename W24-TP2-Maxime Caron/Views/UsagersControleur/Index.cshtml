@@ -1,0 +1,46 @@
+﻿@model IEnumerable<W24_TP2_Maxime_Caron.ViewModels.usager>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Utilisateurs</h1>
+
+@*<p>
+    <a asp-action="Create">Create New</a>
+</p>*@
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                UserName
+            </th>
+            <th>
+                Nombre sujet
+            </th>
+            <th>
+                Nombre message
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SujetCount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MessageCount)
+            </td>            
+            <td>
+                @*<a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |*@
+                    <a class="btn btn-default color-DarkGray" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                @*<a asp-action="Delete" asp-route-id="@item.Id">Delete</a>*@
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

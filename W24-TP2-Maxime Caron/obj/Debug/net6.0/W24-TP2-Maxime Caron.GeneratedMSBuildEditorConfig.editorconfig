@@ -1,0 +1,172 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = W24_TP2_Maxime_Caron
+build_property.RootNamespace = W24_TP2_Maxime_Caron
+build_property.ProjectDir = C:\Users\EcoleMax\Desktop\W24-TP2-Maxime Caron\W24-TP2-Maxime Caron\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\EcoleMax\Desktop\W24-TP2-Maxime Caron\W24-TP2-Maxime Caron
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/AspNetUsers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNwTmV0VXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/AspNetUsers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNwTmV0VXNlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/AspNetUsers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNwTmV0VXNlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/AspNetUsers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNwTmV0VXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/AspNetUsers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNwTmV0VXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/Categories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/Categories/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/Categories/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/Categories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/Categories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/Messages/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/Messages/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/Messages/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/Messages/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/Messages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/Sujets/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VqZXRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/Sujets/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VqZXRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/Sujets/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VqZXRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/Sujets/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VqZXRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/Sujets/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VqZXRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/UsagersControleur/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNhZ2Vyc0NvbnRyb2xldXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/UsagersControleur/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNhZ2Vyc0NvbnRyb2xldXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/UsagersControleur/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNhZ2Vyc0NvbnRyb2xldXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/UsagersControleur/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNhZ2Vyc0NvbnRyb2xldXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/UsagersControleur/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNhZ2Vyc0NvbnRyb2xldXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EcoleMax/Desktop/W24-TP2-Maxime Caron/W24-TP2-Maxime Caron/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-zrqaoz9v3m

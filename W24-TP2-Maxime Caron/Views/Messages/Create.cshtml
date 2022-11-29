@@ -1,0 +1,52 @@
+﻿@model W24_TP2_Maxime_Caron.Models.Message
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Message</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="SujetId" class="control-label">Sujet</label>
+                <select asp-for="SujetId" class ="form-control" asp-items="ViewBag.SujetId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Utilisateur" class="control-label">Utilisateur</label>
+                <input asp-for="Utilisateur" class="form-control" />
+                <span asp-validation-for="Utilisateur" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MsgText" class="control-label">Text</label>
+                <textarea asp-for="MsgText" class="form-control"></textarea>
+                <span asp-validation-for="MsgText" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MsgDate" class="control-label">Date</label>
+                <input asp-for="MsgDate" class="form-control" />
+                <span asp-validation-for="MsgDate" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="MsgActif" /> Actif
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

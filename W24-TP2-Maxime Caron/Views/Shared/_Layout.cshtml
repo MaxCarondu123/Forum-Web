@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Forum des sports</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700|Playfair+Display:400,700,900" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+    <link rel="stylesheet" href="~/css/animate.css">
+    <link rel="stylesheet" href="~/css/main.css">
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+
+<body>
+    <@*header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">W24_TP1_Maxime_Caron</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>*@
+    <header>
+        <!--Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark cyan fixed-top">
+            <div class="container">
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index">Forum Des Sports</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+                    <ul class="navbar-nav ml-auto">                        
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">Accueil</a>
+                        </li>
+                        @if (User.IsInRole("Admin")){
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="UsagersControleur" asp-action="Index">Utilisateurs</a>
+                            </li>
+                        }                      
+                    </ul>
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+
+        <!--/.Navbar -->
+        <!--Carousel Wrapper-->
+        <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="~/images/Hockey1.jpg" alt="First slide">
+                     <div class="gradient"></div>
+                      <div class="carousel-caption">
+                       <h1>Hockey</h1>
+                       <p class="lead">Cliquez ici pour en savoir plus sur le sujet</p>
+                       <a class="btn btn-primary" href="about.html"><span>En Savoir Plus</span></a>
+                      </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="~/images/Baseball1.jpg" alt="Second slide">
+                     <div class="gradient"></div>
+                      <div class="carousel-caption">
+                       <h1>Baseball</h1>
+                       <p class="lead">Cliquez ici pour en savoir plus sur le sujet</p>
+                       <a class="btn btn-primary" href="about.html"><span>En Savoir Plus</span></a>
+                      </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="~/images/Tennis1.jpg" alt="Third slide">
+                     <div class="gradient"></div>
+                      <div class="carousel-caption">
+                       <h1>Tennis</h1>
+                       <p class="lead">Cliquez ici pour en savoir plus sur le sujet</p>
+                       <a class="btn btn-primary" href="about.html"><span>En Savoir Plus</span></a>
+                      </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="~/images/Soccer1.jpg" alt="Third slide">
+                     <div class="gradient"></div>
+                      <div class="carousel-caption">
+                       <h1>Soccer</h1>
+                       <p class="lead">Cliquez ici pour en savoir plus sur le sujet</p>
+                       <a class="btn btn-primary" href="about.html"><span>En Savoir Plus</span></a>
+                      </div>
+                </div>
+            </div>
+            <!--/.Slides-->
+            <!--/.Controls-->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-thumb" data-slide-to="0" class="active"> <img class="d-block w-100" src="~/images/Hockey1.jpg" class="img-fluid"></li>
+                <li data-target="#carousel-thumb" data-slide-to="1"><img class="d-block w-100" src="~/images/Baseball1.jpg" class="img-fluid"></li>
+                <li data-target="#carousel-thumb" data-slide-to="2"><img class="d-block w-100" src="~/images/Tennis1.jpg" class="img-fluid"></li>
+                <li data-target="#carousel-thumb" data-slide-to="3"><img class="d-block w-100" src="~/images/Soccer1.jpg" class="img-fluid"></li>
+            </ol>
+        </div>
+        <!--/.Carousel Wrapper-->
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+   @* <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - W24_TP1_Maxime_Caron - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>*@
+
+    <!-- Footer -->
+    <footer>       
+        <section class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul>
+                            <li><partial name="_LoginPartial"></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <p>(C) All Rights Reserved Max <span>/</span> Designed and Developed by Max</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/animate.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: 'textarea'
+        });
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
